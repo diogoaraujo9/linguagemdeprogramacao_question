@@ -1,0 +1,33 @@
+﻿.question-container {
+    padding: 20px 0px;
+}
+
+.question-item {
+    padding: 10px;
+    font-size: 14px;
+    background-color: #EFEDDE;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.remove-button {
+    opacity: 0;
+}
+
+.question-item:hover {
+    background-color: #D3D2BE;
+}
+
+.question-item:hover .remove-button {
+    opacity: 1;
+}
+
+.remove-button:hover {
+    cursor: pointer;
+    color:#d9534f;
+}
+

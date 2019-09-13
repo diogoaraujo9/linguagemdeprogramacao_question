@@ -1,0 +1,19 @@
+﻿<div class="question-container">
+    <div class="form-group">
+        <label for="questionText">Question:</label>
+        <input type="text" id="questionText" class="form-control" ng-model="vm.question" required />
+    </div>
+    <div class="form-group">
+        <button class="btn btn-primary" ng-click="vm.saveQuestion()">Save</button>
+    </div>
+
+    <div class="question-item" ng-repeat="question in vm.questionsList">
+        <div>
+            {{question.question}}
+        </div>
+
+        <div class="remove-button" ng-click="vm.removeQuestion(question)">
+            <i class="fas fa-times"></i>
+        </div>
+    </div>
+</div>
